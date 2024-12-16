@@ -9,13 +9,13 @@ function Rules() {
   return (
     <div className="bg-gradient-to-br bg-white text-gray-700 py-10 px-6 sm:px-12 md:px-20 lg:px-36">
       <div className="max-w-screen-lg mx-auto">
-        <h1 className="text-center text-4xl sm:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-800  mb-8 leading-tight">
           Rules 
         </h1>
 
         <div className="mb-12 px-6 sm:px-12">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4  border-b-2 border-[#000000ae] inline-block">Rules and Regulations</h2>
-          <ul className="list-disc list-inside space-y-4 text-lg text-gray-600">
+          <ul className="list-disc list-inside space-y-1 text-lg text-gray-600">
             <li>Participants must be currently enrolled in a university at the time of the qualifier, Feb 2025.</li>
             <li>Participants must have applied with their university email to participate before the deadline and have received a confirmation of being selected for the final event. After the confirmation, participants must have registered on the provider's platform by using their same university email address used during registration by the deadline stated in the confirmation email.</li>
             <li>Registering twice (e.g., using multiple email addresses) to participate in the event is prohibited.</li>
@@ -26,7 +26,7 @@ function Rules() {
 
         <div className="mb-12 px-6 sm:px-12">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-[#000000ae] inline-block">Scoring and Event Logistics</h2>
-          <ul className="list-disc list-inside space-y-4 text-lg text-gray-600">
+          <ul className="list-disc list-inside space-y-1 text-lg text-gray-600">
             <li>To attend all the events (e.g., Qualifier and Final Event), each participant will have to provide their own appropriate Internet connection and IT equipment, as well as take responsibility for any other requirement (e.g., space).</li>
             <li>Any cost associated with events participation (e.g., Internet access) is not covered by the organizers.</li>
             <li>There will be a maximum of 1,000 competitors in the qualifiers and 100 teams in total in the finals (each team will consist of 5 individuals).</li>
@@ -40,7 +40,7 @@ function Rules() {
 
         <div className="mb-12 px-6 sm:px-12">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-[#000000ae] inline-block">Ethics</h2>
-          <ul className="list-disc list-inside space-y-4 text-lg text-gray-600">
+          <ul className="list-disc list-inside space-y-1 text-lg text-gray-600">
             <li>Any activities or actions that would interfere, obstruct, or disturb other teams, participants, and event organizers.</li>
             <li>Spying on other teams, participants, and event organizers.</li>
             <li>Providing hints, clues, or answers to participants other than your own team members.</li>
@@ -53,7 +53,7 @@ function Rules() {
 
         <div className="mb-12 px-6 sm:px-12">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b-2 border-[#000000ae] inline-block">Tiebreakers</h2>
-          <ul className="list-disc list-inside space-y-4 text-lg text-gray-600">
+          <ul className="list-disc list-inside space-y-1 text-lg text-gray-600">
             <li>The total time between a team's first challenge opened and the last successful flag submission.</li>
             <li>The smallest number of total challenges solved between equal points teams (hardest challenges solved).</li>
           </ul>

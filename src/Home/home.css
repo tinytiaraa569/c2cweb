@@ -80,7 +80,9 @@
     display: block;
     margin: 5px auto;
 }
-
+.shadowh1font{
+    filter: drop-shadow(3px 2px 3px rgba(255, 255, 255, 0.818));
+}
 
 @media screen and (max-width: 1380px){
     .fonttexting{
@@ -141,6 +143,9 @@
     .adjustContainer {
       height: 70vh !important;
     }
+    .textaligncenter{
+        text-align: center !important;
+      }
   }
 
 @media screen and (max-width: 480px) {
@@ -171,5 +176,14 @@
       }
       .makesmallfont{
         font-size: 22px !important;
+      }
+      .parasmall{
+        font-size: 12px !important;
+      }
+      .adjusmarginh1{
+        margin-bottom: 2px !important;
+      }
+      .textaligncenter{
+        text-align: center !important;
       }
 }

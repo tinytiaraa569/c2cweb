@@ -5,12 +5,15 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [navitems, setnavitems] = useState([
-    { name: "C2C CTF 2025", path: "/" },
-    { name: "History", path: "/history" },
-    { name: "Organizers", path: "/organizers" },
+    { name: "Home", path: "/" },
+    { name: "Competition Format", path: "/competitionformat" },
     { name: "Rules", path: "/rules" },
+    { name: "FAQ", path: "/faq" },
+    { name: "Organizers", path: "/organizers" },
+    { name: "History", path: "/history" },
     { name: "Sponsors", path: "/sponsors" },
-    { name: "Winners", path: "/winners" },
+    // { name: "Winners", path: "/winners" },
+    
   ]);
 
   const [isOpen, setIsOpen] = useState(false); // State to toggle the menu
@@ -19,6 +22,11 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
   const navigate = useNavigate()
+
+  const handleregister = () => {
+    navigate("mention url of form to tranfer")
+
+  }
 
   return (
     <div className="bg-black h-[70px] text-white font-poppins sticky top-0 left-0 w-full z-50 shadow-lg">
@@ -52,12 +60,12 @@ function Navbar() {
 
         {/* Register Now Button (Desktop) */}
         <div className="hidden lg:flex">
-            <Link
-                href="/register"
+            <button
+              //  onClick={()=>handleregister()} 
                 className="px-4 py-2 text-white text-sm font-semibold rounded-lg transition duration-300 ease-in-out bg-[#e74c3c] hover:bg-[#c0392b]"
             >
                 Register Now
-            </Link>
+            </button>
             </div>
       </div>
 
@@ -91,12 +99,12 @@ function Navbar() {
 
         {/* Register Now Button (Mobile) */}
         <div className="flex justify-center py-4">
-          <Link
-            href="/register"
+          <button
+          //  onClick={()=>handleregister()}
             className="px-6 py-3 text-white text-[14px] font-semibold rounded-lg transition duration-300 ease-in-out bg-[#e74c3c] hover:bg-[#c0392b]"
           >
             Register Now
-          </Link>
+          </button>
         </div>
       </div>
     </div>

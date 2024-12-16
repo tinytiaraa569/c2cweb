@@ -10,6 +10,8 @@ import Organizers from './Organizers/Organizers'
 import Rules from './Rules/Rules'
 import Sponsors from './Sponsors/Sponsors'
 import Winners from './Winners/Winners'
+import Faq from './Faq/Faq'
+import CompetitionFormat from './CompetitionFormat/CompetitionFormat'
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -46,6 +48,10 @@ function App() {
       <Route path="/history" element={<History />}/>
       <Route path={"/organizers"} element={<Organizers />}/>
       <Route path={"/rules"} element={<Rules />}/>
+      <Route path={"/faq"} element={<Faq />}/>
+      <Route path={"/competitionformat"} element={<CompetitionFormat />}/>
+
+      
 
       <Route path={"/sponsors"} element={<Sponsors />}/>
       <Route path={"/winners"} element={<Winners />}/>

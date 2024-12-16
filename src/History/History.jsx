@@ -4,14 +4,15 @@ import secondimg from './images/2.webp';
 import thirdimg from './images/3.webp';
 import fourimg from './images/4.webp';
 import fiveimg from './images/5.webp';
+import Winners from '../Winners/Winners';
 
 function History() {
   const [historydata, sethistorydata] = useState([
-    { id: "1", year: "2020", university: "Royal Holloway, University of London", imgurl: firstimg },
-    { id: "2", year: "2021", university: "Technion - Israel Institute of Technology", imgurl: secondimg },
+    { id: "1", year: "2024", university: "Edith Cowan University", imgurl: fiveimg },
+    { id: "2", year: "2023", university: "Keio University", imgurl: fourimg },
     { id: "3", year: "2022", university: "Massachusetts Institute of Technology (CSAIL)", imgurl: thirdimg },
-    { id: "4", year: "2023", university: "Keio University", imgurl: fourimg },
-    { id: "5", year: "2024", university: "Edith Cowan University", imgurl: fiveimg },
+    { id: "4", year: "2021", university: "Technion - Israel Institute of Technology", imgurl: secondimg },
+    { id: "5", year: "2020", university: "Royal Holloway, University of London", imgurl: firstimg },
   ]);
   useEffect(() => {
     // Scroll to the top of the page when the component is mounted
@@ -19,6 +20,8 @@ function History() {
   }, []); 
 
   return (
+    <>
+    
     <div className="bg-gradient-to-br bg-white text-gray-700 py-10 px-6 sm:px-12 md:px-20 lg:px-36">
         <div className="text-center mb-12 px-6 sm:px-12">
         <h1 className="text-4xl sm:text-5xl font-[700] text-gray-900 mb-4 leading-tight">
@@ -53,6 +56,12 @@ function History() {
         ))}
       </div>
     </div>
+
+    <Winners />
+
+
+    </>
+
   );
 }
 
